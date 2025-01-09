@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="?attr/colorPrimaryInverse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/Bienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a GameRateHub!"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/jugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jugador"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorPrimary"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:src="@drawable/baseline_gamepad_24"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="?attr/colorSecondaryFixedDim"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:textSize="20dp"
+        android:textColor="?attr/colorSecondary"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Pulse el boton de arriba para iniciar la aplicacion"/>
+</LinearLayout>
